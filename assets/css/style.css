@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #1e1e2e, #2e2e3f);
+  color: #fff;
+}
+
+header {
+  position: fixed; /* Keeps the header fixed at the top */
+  top: 0; /* Ensures it's at the very top */
+  left: 0; /* Aligns the header to the left edge of the viewport */
+  right: 0; /* Aligns the header to the right edge of the viewport */
+  margin: 0 auto; /* Centers the header horizontally */
+  width: 100%; /* Ensures the header spans the full width of the viewport */
+  max-width: 1200px; /* Optional: Adds a maximum width to prevent it from being too wide */
+  height: 100px; /* Set the height for the header */
+  backdrop-filter: blur(10px); /* Blur effect for background */
+  padding: 5px 0; /* Adjust padding for content inside the header */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  z-index: 1000; /* Keeps it above other elements */
+  border-radius: 50px; /* Creates a circular/oval shape */
+  overflow: hidden; /* Ensures content stays within the circular border */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+}
+
+/* For Smaller Screens */
+@media (max-width: 768px) {
+  header {
+    width: 90%; /* Makes the header narrower on smaller screens */
+    max-width: none; /* Removes the maximum width restriction */
+    left: 50%; /* Ensures proper centering */
+    transform: translateX(-50%); /* Centers the header by adjusting its position */
+  }
+}
+
+
+header img {
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+header img:hover {
+  transform: scale(1.1);
+}
+
+
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #b0b0d0;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+ul li a:hover {
+  color: #fff;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  background: -webkit-linear-gradient(#ff8a00, #e52e71);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #d0d0e0;
+}
+
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.home__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.home__subtitle {
+  font-size: 1.2rem;
+  color: #a0a0c0;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.grid div {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.grid div:hover {
+  transform: translateY(-10px);
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #ff8a00;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* FAQ Styles */
+.toggle-faq {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.toggle-faq:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.answer {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #c0c0d0;
+}
+
+.nuxt-icon {
+  transition: transform 0.3s;
+}
+
+.nuxt-icon.rotate-180 {
+  transform: rotate(180deg);
+}
