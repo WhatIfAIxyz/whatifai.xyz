@@ -1,0 +1,53 @@
+name: "🐞 Bug Report"
+description: "Report a problem with What If AI."
+title: "[BUG] <Short Description>"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### ❗ Problem Statement
+        Problems we encountered.
+  
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: "❌ Actual Behavior"
+      description: "What went wrong? Provide as much detail as possible."
+      placeholder: "The AI is not responding to queries..."
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "✅ Expected Behavior"
+      description: "What should have happened instead?"
+      placeholder: "The AI should generate a response based on the user's input."
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: "🔄 Steps to Reproduce"
+      description: "Provide clear steps to reproduce the issue."
+      placeholder: |
+        1. Open the chat interface.
+        2. Type a question: "What if dinosaurs never went extinct?"
+        3. Press send and observe the response.
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "💻 Environment"
+      description: "Select where you encountered the issue."
+      multiple: false
+      options:
+        - "Web App"
+        - "Mobile App"
+        - "Local Development"
+        - "Blockchain Integration"
+
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: "🔧 Suggested Fix (if known)"
+      description: "If you have an idea on how to fix it, mention here."
+      placeholder: "The AI's response engine may need a context re-evaluation."
