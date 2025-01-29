@@ -1,0 +1,16 @@
+✅ How to Use These Files
+1.Install dependencies
+
+pip install torch transformers solana
+
+2.Train the model
+
+python ai/train_model.py
+
+3.Evaluate performance
+
+python ai/evaluate_model.py
+
+4.Run AI predictions
+
+python ai/hypothetica_net.py
