@@ -1,0 +1,40 @@
+name: "✨ Feature Request"
+description: "Suggest a new feature for What If AI."
+title: "[FEATURE] <Short Description>"
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🚀 Feature Request
+        Features to be implemented.
+  
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: "📜 Feature Description"
+      description: "Describe the feature and why it's important."
+      placeholder: "I want What If AI to generate alternate history story summaries..."
+
+  - type: textarea
+    id: benefits
+    attributes:
+      label: "🎯 Benefit of this Feature"
+      description: "How will this improve the project?"
+      placeholder: "Users can get structured responses instead of just raw text."
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: "🛠 Use Case / Example"
+      description: "Describe a scenario where this feature would be useful."
+      placeholder: |
+        1. A user types: "What if Tesla had won the AC vs DC war?"
+        2. The AI generates a well-structured narrative instead of a paragraph response.
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: "📌 Additional Context (if any)"
+      description: "Provide any other relevant details."
+      placeholder: "This could be integrated with GPT-4 API for improved responses."
